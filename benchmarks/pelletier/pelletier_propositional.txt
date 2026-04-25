@@ -1,0 +1,27 @@
+# Pelletier (1986) propositional problems P1-P17 (subset).
+# All listed formulas are classical tautologies. Numbering follows Pelletier's
+# original paper: F. J. Pelletier, "Seventy-five Problems for Testing
+# Automatic Theorem Provers", Journal of Automated Reasoning 2(2), 1986.
+# Biconditional problems are omitted (course syntax has no built-in <->).
+# P1: contraposition
+(P -> Q) -> (~Q -> ~P)
+# P2: classical double negation
+~~P -> P
+# P3
+~(P -> Q) -> (Q -> P)
+# P4
+(~P -> Q) -> (~Q -> P)
+# P5
+((P | Q) -> (P | R)) -> (P | (Q -> R))
+# P6: law of excluded middle
+P | ~P
+# P7: triple negation
+P | ~~~P
+# P9
+((P | Q) & (~P | Q) & (P | ~Q)) -> ~(~P | ~Q)
+# P13: distributivity
+(P | (Q & R)) -> ((P | Q) & (P | R))
+# P16: classical dichotomy
+(P -> Q) | (Q -> P)
+# P17
+(P & (Q -> R)) -> ((P -> ~R) -> ~Q)

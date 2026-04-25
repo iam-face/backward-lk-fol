@@ -1,0 +1,5 @@
+# Invalid or deliberately hard formulas (test prover's behaviour under stress)
+(P -> Q) -> (Q -> P)
+(forall x. (exists y. R(x, y))) -> (exists y. (forall x. R(x, y)))
+(exists x. P(x)) -> (forall x. P(x))
+(forall x. (P(x) | Q(x))) -> ((forall x. P(x)) | (forall x. Q(x)))

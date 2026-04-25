@@ -1,0 +1,6 @@
+((exists x. forall y. R(x, y)) & ((forall z. R(z, z)))) -> (forall y. exists x. R(x, y))
+((exists x. forall y. R(x, y)) & ((forall z. R(z, z)) & (forall z. R(z, z)))) -> (forall y. exists x. R(x, y))
+((exists x. forall y. R(x, y)) & ((forall z. R(z, z)) & (forall z. R(z, z)) & (forall z. R(z, z)))) -> (forall y. exists x. R(x, y))
+((exists x. forall y. R(x, y)) & ((forall z. R(z, z)) & (forall z. R(z, z)) & (forall z. R(z, z)) & (forall z. R(z, z)))) -> (forall y. exists x. R(x, y))
+((exists x. forall y. R(x, y)) & ((forall z. R(z, z)) & (forall z. R(z, z)) & (forall z. R(z, z)) & (forall z. R(z, z)) & (forall z. R(z, z)))) -> (forall y. exists x. R(x, y))
+((exists x. forall y. R(x, y)) & ((forall z. R(z, z)) & (forall z. R(z, z)) & (forall z. R(z, z)) & (forall z. R(z, z)) & (forall z. R(z, z)) & (forall z. R(z, z)))) -> (forall y. exists x. R(x, y))

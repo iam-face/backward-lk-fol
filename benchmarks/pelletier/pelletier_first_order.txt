@@ -1,0 +1,23 @@
+# Pelletier (1986) first-order problems (subset).
+# All listed formulas are classical tautologies of pure first-order logic
+# (no equality, no function symbols), as catalogued by Pelletier's paper:
+# F. J. Pelletier, "Seventy-five Problems for Testing Automatic Theorem
+# Provers", Journal of Automated Reasoning 2(2), 1986, pp. 191-216.
+# Problem identifiers below match the paper.
+# P18: drinker formula (Smullyan)
+exists y. forall x. (D(y) -> D(x))
+# P19
+exists x. forall y. forall z. ((P(y) -> Q(z)) -> (P(x) -> Q(x)))
+# P20
+(forall x. forall y. exists z. forall w. ((P(x) & Q(y)) -> (R(z) & U(w)))) -> ((exists x. exists y. (P(x) & Q(y))) -> exists z. R(z))
+# P24
+(~(exists x. (S(x) & Q(x)))) & (forall x. (P(x) -> (Q(x) | R(x)))) & (~(exists x. P(x)) -> exists x. Q(x)) & (forall x. ((Q(x) | R(x)) -> S(x))) -> (exists x. (P(x) & R(x)))
+# P25 (existence pattern)
+(exists x. P(x)) & (forall x. (F(x) -> ~(G(x) & R(x)))) & (forall x. (P(x) -> (G(x) & F(x)))) & ((forall x. (P(x) -> H(x))) | (exists x. (P(x) & R(x)))) -> (exists x. (H(x) & ~R(x)))
+# P39 (Russellian self-reference)
+~(exists x. forall y. (F(y, x) -> ~F(y, y)))
+# Quantifier-distribution rules over implication
+(forall x. (P(x) -> Q(x))) -> ((forall x. P(x)) -> forall x. Q(x))
+(forall x. (P(x) -> Q(x))) -> ((exists x. P(x)) -> exists x. Q(x))
+# Valid quantifier swap (one direction only)
+(exists x. forall y. R(x, y)) -> forall y. exists x. R(x, y)

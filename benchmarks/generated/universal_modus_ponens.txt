@@ -1,0 +1,7 @@
+forall x. ((((P0(x) -> P1(x))) & P0(x)) -> P1(x))
+forall x. ((((P0(x) -> P1(x)) & (P1(x) -> P2(x))) & P0(x)) -> P2(x))
+forall x. ((((P0(x) -> P1(x)) & (P1(x) -> P2(x)) & (P2(x) -> P3(x))) & P0(x)) -> P3(x))
+forall x. ((((P0(x) -> P1(x)) & (P1(x) -> P2(x)) & (P2(x) -> P3(x)) & (P3(x) -> P4(x))) & P0(x)) -> P4(x))
+forall x. ((((P0(x) -> P1(x)) & (P1(x) -> P2(x)) & (P2(x) -> P3(x)) & (P3(x) -> P4(x)) & (P4(x) -> P5(x))) & P0(x)) -> P5(x))
+forall x. ((((P0(x) -> P1(x)) & (P1(x) -> P2(x)) & (P2(x) -> P3(x)) & (P3(x) -> P4(x)) & (P4(x) -> P5(x)) & (P5(x) -> P6(x))) & P0(x)) -> P6(x))
+forall x. ((((P0(x) -> P1(x)) & (P1(x) -> P2(x)) & (P2(x) -> P3(x)) & (P3(x) -> P4(x)) & (P4(x) -> P5(x)) & (P5(x) -> P6(x)) & (P6(x) -> P7(x))) & P0(x)) -> P7(x))

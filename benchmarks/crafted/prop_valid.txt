@@ -1,0 +1,10 @@
+# Valid propositional schemas
+# Each line is a classical tautology in our ASCII syntax.
+P -> P
+(P -> Q) -> ((~P -> Q) -> Q)
+P -> (Q -> P)
+(~P -> P) -> P
+(P -> (Q -> R)) -> ((P -> Q) -> (P -> R))
+((P & Q) -> R) -> (P -> (Q -> R))
+(P -> Q) -> (~Q -> ~P)
+((P | Q) & ~P) -> Q

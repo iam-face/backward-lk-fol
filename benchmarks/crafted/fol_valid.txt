@@ -1,0 +1,9 @@
+# Small valid first-order schemas
+forall x. (R(x) -> R(x))
+(exists x. R(x)) -> (exists y. R(y))
+forall x. forall y. (R(x, y) -> R(x, y))
+(forall x. P(x)) -> (exists x. P(x))
+(forall x. (P(x) & Q(x))) -> ((forall x. P(x)) & (forall x. Q(x)))
+((forall x. P(x)) | (forall x. Q(x))) -> (forall x. (P(x) | Q(x)))
+(exists x. (P(x) | Q(x))) -> ((exists x. P(x)) | (exists x. Q(x)))
+forall x. (P(x) -> (exists y. P(y)))
