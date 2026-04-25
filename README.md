@@ -3,7 +3,7 @@
 A Python implementation of the backward LK' proof-search procedure
 described in Hou (2021), Chapter 2, Algorithm 2, with an `improved`
 variant that adds three search-control hooks while keeping the same
-LK' rule set. Neither variant calls an external prover.
+LK' rule set.
 
 ## Layout
 
@@ -75,7 +75,7 @@ python scripts/run_experiments.py --benchmark-root benchmarks \
 ```
 
 `run_experiments.py` walks every `.txt` benchmark, runs both modes
-under identical caps (200,000 expansion steps and 5 s wall-clock
+under identical caps (200,000 expansion steps and 5 s clock
 per formula), and writes one CSV row per (formula, mode) pair with
 the fields:
 
