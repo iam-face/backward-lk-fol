@@ -2,7 +2,7 @@
 # All listed formulas are classical tautologies. Numbering follows Pelletier's
 # original paper: F. J. Pelletier, "Seventy-five Problems for Testing
 # Automatic Theorem Provers", Journal of Automated Reasoning 2(2), 1986.
-# Biconditional problems are omitted (course syntax has no built-in <->).
+# Biconditional problems are omitted (parser has no built-in <->).
 # P1: contraposition
 (P -> Q) -> (~Q -> ~P)
 # P2: classical double negation

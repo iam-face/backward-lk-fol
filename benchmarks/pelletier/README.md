@@ -16,8 +16,10 @@ antinomy P39).
 Two files:
 
 - `pelletier_propositional.txt`: P1, P2, P3, P4, P5, P6, P7, P9, P13, P16,
-  P17. Biconditional problems (P10-P12, P14, P15) are omitted because the
-  course ASCII grammar lacks `<->`.
+  P17. The biconditional problems (P10-P12, P14, P15) are omitted because
+  my parser does not include `<->`; each could be rewritten as
+  `(A -> B) & (B -> A)`, but I kept the input grammar minimal and skipped
+  them instead.
 - `pelletier_first_order.txt`: P18, P19, P20, P24, P25, P39, plus three
   classical quantifier-distribution and one-direction swap formulas added
   as rule-level regression checks.

@@ -10,7 +10,7 @@ LK' rule set.
 ```
 src/
   fol.py             # AST (Term, Formula), substitution, alpha-equivalence
-  parser.py          # recursive-descent parser for the course ASCII grammar
+  parser.py          # recursive-descent parser for the prover's ASCII grammar
   sequent.py         # two-sided frozenset sequent type
   unify.py           # first-order syntactic unification with occurs check
   lk_search.py       # rules, move generator and DFS engine (both modes)
